@@ -30,7 +30,7 @@ Soponyai Gergő 12345 sikerült
 
 Stocker Ádám Stoki 16 sikerult
 
-Szegi Bertalan
+Szegi Bertalan 2026
 
 Szentirmai Soma Pesti bevándorló
 

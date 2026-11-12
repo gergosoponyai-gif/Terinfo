@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>Teszt gomb</h1>
+
+<p>A Gomb tesztelése:</p>
+
+<button type="button" onclick="myFunction()">Kattints rám!</button>
+
+<p id="demo">Ez egy teszt.</p>
+
+<script>
+function myFunction() { 
+  document.getElementById("demo").innerHTML = "Hello JavaScript!";
+}
+</script>
+
+
+<h2>Lámpa kapcsolgatás</h2>
+
+<button onclick="document.getElementById('myImage').src='https://www.w3schools.com/js/pic_bulbon.gif'">Lámpa felkapcsolása</button>
+
+<img id="myImage" src="https://www.w3schools.com/js/pic_bulboff.gif" style="width:100px">
+
+<button onclick="document.getElementById('myImage').src='https://www.w3schools.com/js/pic_bulboff.gif'">Lámpa lekapcsolása</button>
+
+
+</body>
+</html>
+

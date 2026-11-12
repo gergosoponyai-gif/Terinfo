@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>Gomb nyomás</h1>
+
+<p>Gomb lenyomása:</p>
+
+<button type="button" onclick="myFunction()">Kattints rám!</button>
+
+<p id="demo">Ez egy bemutató.</p>
+
+<script>
+function myFunction() {
+  document.getElementById("demo").innerHTML = "Hello JavaScript!";
+}
+</script>
+
+<h2>Kapcsolás</h2>
+
+<button onclick="document.getElementById('myImage').src='https://www.w3schools.com/js/pic_bulbon.gif'">Lámpa felkapcsolás</button>
+
+<img id="myImage" src="https://www.w3schools.com/js/pic_bulboff.gif" style="width:100px">
+
+<button onclick="document.getElementById('myImage').src='https://www.w3schools.com/js/pic_bulboff.gif'">Lámpa lekapcsolás</button>
+
+ </body>
+</html>
