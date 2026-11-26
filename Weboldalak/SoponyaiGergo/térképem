@@ -1,1 +1,47 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+  <meta charset="UTF-8">
+  <title>Térképem</title>
+  <style>
+    #terkep {
+      height: 500px;
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+  <h1>A kiválasztott hely</h1>
+
+  <!-- Ide töltődik be a térkép -->
+  <div id="terkep"></div>
+
+  <br>
+  <!-- Írd át az index.html-t a főoldalad pontos fájlnevére -->
+  <a href="index.html">Vissza a főoldalra</a>
+
+  <script>
+    function initMap() {
+      // A kívánt lokáció koordinátái (jelenleg Budapest)
+      const lokacio = { lat: 47.4979, lng: 19.0402 };
+
+      const map = new google.maps.Map(document.getElementById("terkep"), {
+        zoom: 15,
+        center: lokacio,
+      });
+
+      // Piros jelölő (pin) elhelyezése a helyen
+      new google.maps.Marker({
+        position: lokacio,
+        map: map,
+        title: "Itt vagyok!",
+      });
+    }
+  </script>
+
+  <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA9ZCE59FVZtuEc5XYEGY4hxHmMfO-L7I0&callback=initMap">
+  </script>
+</body>
+</html>
 
